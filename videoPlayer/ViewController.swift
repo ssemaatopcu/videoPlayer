@@ -20,3 +20,9 @@ class ViewController: UIViewController {
     }
 }
 
+private func playVideo() {
+    guard let path = Bundle.main.path(forResource: "test", ofType: "mp4") else {
+        debugPrint("test.mp4 not found")
+        return
+    }
+}
